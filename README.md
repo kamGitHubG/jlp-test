@@ -7,9 +7,12 @@ The project has been develop as part of the test.   The functionality involves c
 The project has been implemented as Spring boot web Rest API.   A 
 
 The endpoints for performing above tasks are as follows -
-http://localhost:8080/reducedProducts
-http://localhost:8080/reducedProducts?labelType=ShowWasThenNow
-http://localhost:8080/reducedProducts?labelType=ShowPercDscount
+
+`http://localhost:8080/reducedProducts`
+
+`http://localhost:8080/reducedProducts?labelType=ShowWasThenNow`
+
+`http://localhost:8080/reducedProducts?labelType=ShowPercDscount`
 
 
 ### Example CURL commands
