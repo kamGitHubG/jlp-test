@@ -1,0 +1,6 @@
+com/jlp/ft/ProductFunctionalTest.class
+com/jlp/bdd/ProductStepDefinition.class
+com/jlp/dto/ProductMapperTest.class
+com/jlp/bdd/RunCucumberTest.class
+com/jlp/JlpTestApplicationTests.class
+com/jlp/bdd/AbstractSpringTest.class

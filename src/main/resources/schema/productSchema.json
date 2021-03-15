@@ -1,0 +1,859 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema",
+	"$id": "http://example.com/example.json",
+	"type": "object",
+	"title": "JLPSchema",
+	"description": "The root schema comprises the entire JSON document.",
+	"default": {},
+	"required": [
+		"showInStockOnly",
+		"products",
+		"facets",
+		"results",
+		"pagesAvailable",
+		"crumbs",
+		"pageInformation",
+		"baseFacetId"
+	],
+	"properties": {
+		"showInStockOnly": {
+			"$id": "#/properties/showInStockOnly",
+			"type": "boolean",
+			"title": "The showInStockOnly schema",
+			"description": "An explanation about the purpose of this instance.",
+			"default": false
+		},
+		"products": {
+			"$id": "#/properties/products",
+			"type": "array",
+			"title": "The products schema",
+			"description": "An explanation about the purpose of this instance.",
+			"default": [],
+			"additionalItems": true,
+			"items": {
+				"$id": "#/properties/products/items",
+				"type": "object",
+				"title": "Product",
+				"description": "An explanation about the purpose of this instance.",
+				"default": {},
+				"required": [
+					"productId",
+					"type",
+					"title",
+					"htmlTitle",
+					"code",
+					"averageRating",
+					"reviews",
+					"price",
+					"image",
+					"displaySpecialOffer",
+					"promoMessages",
+					"nonPromoMessage",
+					"defaultSkuId",
+					"colorSwatches",
+					"colorSwatchSelected",
+					"colorWheelMessage",
+					"outOfStock",
+					"emailMeWhenAvailable",
+					"availabilityMessage",
+					"compare",
+					"fabric",
+					"swatchAvailable",
+					"categoryQuickViewEnabled",
+					"swatchCategoryType",
+					"brand",
+					"ageRestriction",
+					"isInStoreOnly",
+					"isMadeToMeasure",
+					"isBundle",
+					"isProductSet",
+					"promotionalFeatures",
+					"features",
+					"dynamicAttributes",
+					"directorate",
+					"futureRelease",
+					"multiSku",
+					"fabricByLength",
+					"quickAddToBasket",
+					"permanentOos"
+				],
+				"properties": {
+					"productId": {
+						"$id": "#/properties/products/items/properties/productId",
+						"type": "string",
+						"title": "The productId schema",
+						"description": "An explanation about the purpose of this instance.",
+						"default": ""
+					},
+					"type": {
+						"$id": "#/properties/products/items/properties/type",
+						"type": "string",
+						"title": "The type schema",
+						"description": "An explanation about the purpose of this instance.",
+						"default": ""
+					},
+					"title": {
+						"$id": "#/properties/products/items/properties/title",
+						"type": "string",
+						"title": "The title schema",
+						"description": "An explanation about the purpose of this instance.",
+						"default": ""
+					},
+					"htmlTitle": {
+						"$id": "#/properties/products/items/properties/htmlTitle",
+						"type": "string",
+						"title": "The htmlTitle schema",
+						"description": "An explanation about the purpose of this instance.",
+						"default": ""
+					},
+					"code": {
+						"$id": "#/properties/products/items/properties/code",
+						"type": "string",
+						"title": "The code schema",
+						"description": "An explanation about the purpose of this instance.",
+						"default": ""
+					},
+					"averageRating": {
+						"$id": "#/properties/products/items/properties/averageRating",
+						"type": "number",
+						"title": "The averageRating schema",
+						"description": "An explanation about the purpose of this instance.",
+						"default": 0.0
+					},
+					"reviews": {
+						"$id": "#/properties/products/items/properties/reviews",
+						"type": "integer",
+						"title": "The reviews schema",
+						"description": "An explanation about the purpose of this instance.",
+						"default": 0
+					},
+					"price": {
+						"$id": "#/properties/products/items/properties/price",
+						"type": "object",
+						"title": "Price",
+						"description": "An explanation about the purpose of this instance.",
+						"default": {},
+						"required": [
+							"was",
+							"then1",
+							"then2",
+							"now",
+							"uom",
+							"currency"
+						],
+						"properties": {
+							"was": {
+								"$id": "#/properties/products/items/properties/price/properties/was",
+								"type": "string",
+								"title": "The was schema",
+								"description": "An explanation about the purpose of this instance.",
+								"default": ""
+							},
+							"then1": {
+								"$id": "#/properties/products/items/properties/price/properties/then1",
+								"type": "string",
+								"title": "The then1 schema",
+								"description": "An explanation about the purpose of this instance.",
+								"default": ""
+							},
+							"then2": {
+								"$id": "#/properties/products/items/properties/price/properties/then2",
+								"type": "string",
+								"title": "The then2 schema",
+								"description": "An explanation about the purpose of this instance.",
+								"default": ""
+							},
+							"now": {
+								"$id": "#/properties/products/items/properties/price/properties/now",
+								"type": "string",
+								"title": "The now schema",
+								"description": "An explanation about the purpose of this instance.",
+								"default": ""
+							},
+							"uom": {
+								"$id": "#/properties/products/items/properties/price/properties/uom",
+								"type": "string",
+								"title": "The uom schema",
+								"description": "An explanation about the purpose of this instance.",
+								"default": ""
+							},
+							"currency": {
+								"$id": "#/properties/products/items/properties/price/properties/currency",
+								"type": "string",
+								"title": "The currency schema",
+								"description": "An explanation about the purpose of this instance.",
+								"default": ""
+							}
+						},
+						"additionalProperties": true
+					},
+					"image": {
+						"$id": "#/properties/products/items/properties/image",
+						"type": "string",
+						"title": "The image schema",
+						"description": "An explanation about the purpose of this instance.",
+						"default": ""
+					},
+					"displaySpecialOffer": {
+						"$id": "#/properties/products/items/properties/displaySpecialOffer",
+						"type": "string",
+						"title": "The displaySpecialOffer schema",
+						"description": "An explanation about the purpose of this instance.",
+						"default": ""
+					},
+					"promoMessages": {
+						"$id": "#/properties/products/items/properties/promoMessages",
+						"type": "object",
+						"title": "PromoMessages",
+						"description": "An explanation about the purpose of this instance.",
+						"default": {},
+						"required": [
+							"reducedToClear",
+							"priceMatched",
+							"offer",
+							"customPromotionalMessage",
+							"bundleHeadline",
+							"customSpecialOffer"
+						],
+						"properties": {
+							"reducedToClear": {
+								"$id": "#/properties/products/items/properties/promoMessages/properties/reducedToClear",
+								"type": "boolean",
+								"title": "The reducedToClear schema",
+								"description": "An explanation about the purpose of this instance.",
+								"default": false
+							},
+							"priceMatched": {
+								"$id": "#/properties/products/items/properties/promoMessages/properties/priceMatched",
+								"type": "string",
+								"title": "The priceMatched schema",
+								"description": "An explanation about the purpose of this instance.",
+								"default": ""
+							},
+							"offer": {
+								"$id": "#/properties/products/items/properties/promoMessages/properties/offer",
+								"type": "string",
+								"title": "The offer schema",
+								"description": "An explanation about the purpose of this instance.",
+								"default": ""
+							},
+							"customPromotionalMessage": {
+								"$id": "#/properties/products/items/properties/promoMessages/properties/customPromotionalMessage",
+								"type": "string",
+								"title": "The customPromotionalMessage schema",
+								"description": "An explanation about the purpose of this instance.",
+								"default": ""
+							},
+							"bundleHeadline": {
+								"$id": "#/properties/products/items/properties/promoMessages/properties/bundleHeadline",
+								"type": "string",
+								"title": "The bundleHeadline schema",
+								"description": "An explanation about the purpose of this instance.",
+								"default": ""
+							},
+							"customSpecialOffer": {
+								"$id": "#/properties/products/items/properties/promoMessages/properties/customSpecialOffer",
+								"type": "object",
+								"title": "CustomSpecialOffer",
+								"description": "An explanation about the purpose of this instance.",
+								"default": {},
+								"required": [],
+								"additionalProperties": true
+							}
+						},
+						"additionalProperties": true
+					},
+					"nonPromoMessage": {
+						"$id": "#/properties/products/items/properties/nonPromoMessage",
+						"type": "string",
+						"title": "The nonPromoMessage schema",
+						"description": "An explanation about the purpose of this instance.",
+						"default": ""
+					},
+					"defaultSkuId": {
+						"$id": "#/properties/products/items/properties/defaultSkuId",
+						"type": "string",
+						"title": "The defaultSkuId schema",
+						"description": "An explanation about the purpose of this instance.",
+						"default": ""
+					},
+					"colorSwatches": {
+						"$id": "#/properties/products/items/properties/colorSwatches",
+						"type": "array",
+						"title": "The colorSwatches schema",
+						"description": "An explanation about the purpose of this instance.",
+						"default": [],
+						"additionalItems": true,
+						"items": {
+							"$id": "#/properties/products/items/properties/colorSwatches/items",
+							"type": "object",
+							"title": "ColorSwatch",
+							"description": "An explanation about the purpose of this instance.",
+							"default": {},
+							"required": [
+								"color",
+								"basicColor",
+								"colorSwatchUrl",
+								"imageUrl",
+								"isAvailable",
+								"skuId"
+							],
+							"properties": {
+								"color": {
+									"$id": "#/properties/products/items/properties/colorSwatches/items/properties/color",
+									"type": "string",
+									"title": "The color schema",
+									"description": "An explanation about the purpose of this instance.",
+									"default": ""
+								},
+								"basicColor": {
+									"$id": "#/properties/products/items/properties/colorSwatches/items/properties/basicColor",
+									"type": "string",
+									"title": "The basicColor schema",
+									"description": "An explanation about the purpose of this instance.",
+									"default": ""
+								},
+								"colorSwatchUrl": {
+									"$id": "#/properties/products/items/properties/colorSwatches/items/properties/colorSwatchUrl",
+									"type": "string",
+									"title": "The colorSwatchUrl schema",
+									"description": "An explanation about the purpose of this instance.",
+									"default": ""
+								},
+								"imageUrl": {
+									"$id": "#/properties/products/items/properties/colorSwatches/items/properties/imageUrl",
+									"type": "string",
+									"title": "The imageUrl schema",
+									"description": "An explanation about the purpose of this instance.",
+									"default": ""
+								},
+								"isAvailable": {
+									"$id": "#/properties/products/items/properties/colorSwatches/items/properties/isAvailable",
+									"type": "boolean",
+									"title": "The isAvailable schema",
+									"description": "An explanation about the purpose of this instance.",
+									"default": false
+								},
+								"skuId": {
+									"$id": "#/properties/products/items/properties/colorSwatches/items/properties/skuId",
+									"type": "string",
+									"title": "The skuId schema",
+									"description": "An explanation about the purpose of this instance.",
+									"default": ""
+								}
+							},
+							"additionalProperties": true
+						}
+					},
+					"colorSwatchSelected": {
+						"$id": "#/properties/products/items/properties/colorSwatchSelected",
+						"type": "integer",
+						"title": "The colorSwatchSelected schema",
+						"description": "An explanation about the purpose of this instance.",
+						"default": 0
+					},
+					"colorWheelMessage": {
+						"$id": "#/properties/products/items/properties/colorWheelMessage",
+						"type": "string",
+						"title": "The colorWheelMessage schema",
+						"description": "An explanation about the purpose of this instance.",
+						"default": ""
+					},
+					"outOfStock": {
+						"$id": "#/properties/products/items/properties/outOfStock",
+						"type": "boolean",
+						"title": "The outOfStock schema",
+						"description": "An explanation about the purpose of this instance.",
+						"default": false
+					},
+					"emailMeWhenAvailable": {
+						"$id": "#/properties/products/items/properties/emailMeWhenAvailable",
+						"type": "boolean",
+						"title": "The emailMeWhenAvailable schema",
+						"description": "An explanation about the purpose of this instance.",
+						"default": false
+					},
+					"availabilityMessage": {
+						"$id": "#/properties/products/items/properties/availabilityMessage",
+						"type": "string",
+						"title": "The availabilityMessage schema",
+						"description": "An explanation about the purpose of this instance.",
+						"default": ""
+					},
+					"compare": {
+						"$id": "#/properties/products/items/properties/compare",
+						"type": "boolean",
+						"title": "The compare schema",
+						"description": "An explanation about the purpose of this instance.",
+						"default": false
+					},
+					"fabric": {
+						"$id": "#/properties/products/items/properties/fabric",
+						"type": "string",
+						"title": "The fabric schema",
+						"description": "An explanation about the purpose of this instance.",
+						"default": ""
+					},
+					"swatchAvailable": {
+						"$id": "#/properties/products/items/properties/swatchAvailable",
+						"type": "boolean",
+						"title": "The swatchAvailable schema",
+						"description": "An explanation about the purpose of this instance.",
+						"default": false
+					},
+					"categoryQuickViewEnabled": {
+						"$id": "#/properties/products/items/properties/categoryQuickViewEnabled",
+						"type": "boolean",
+						"title": "The categoryQuickViewEnabled schema",
+						"description": "An explanation about the purpose of this instance.",
+						"default": false
+					},
+					"swatchCategoryType": {
+						"$id": "#/properties/products/items/properties/swatchCategoryType",
+						"type": "string",
+						"title": "The swatchCategoryType schema",
+						"description": "An explanation about the purpose of this instance.",
+						"default": ""
+					},
+					"brand": {
+						"$id": "#/properties/products/items/properties/brand",
+						"type": "string",
+						"title": "The brand schema",
+						"description": "An explanation about the purpose of this instance.",
+						"default": ""
+					},
+					"ageRestriction": {
+						"$id": "#/properties/products/items/properties/ageRestriction",
+						"type": "integer",
+						"title": "The ageRestriction schema",
+						"description": "An explanation about the purpose of this instance.",
+						"default": 0
+					},
+					"isInStoreOnly": {
+						"$id": "#/properties/products/items/properties/isInStoreOnly",
+						"type": "boolean",
+						"title": "The isInStoreOnly schema",
+						"description": "An explanation about the purpose of this instance.",
+						"default": false
+					},
+					"isMadeToMeasure": {
+						"$id": "#/properties/products/items/properties/isMadeToMeasure",
+						"type": "boolean",
+						"title": "The isMadeToMeasure schema",
+						"description": "An explanation about the purpose of this instance.",
+						"default": false
+					},
+					"isBundle": {
+						"$id": "#/properties/products/items/properties/isBundle",
+						"type": "boolean",
+						"title": "The isBundle schema",
+						"description": "An explanation about the purpose of this instance.",
+						"default": false
+					},
+					"isProductSet": {
+						"$id": "#/properties/products/items/properties/isProductSet",
+						"type": "boolean",
+						"title": "The isProductSet schema",
+						"description": "An explanation about the purpose of this instance.",
+						"default": false
+					},
+					"promotionalFeatures": {
+						"$id": "#/properties/products/items/properties/promotionalFeatures",
+						"type": "array",
+						"title": "The promotionalFeatures schema",
+						"description": "An explanation about the purpose of this instance.",
+						"default": [],
+						"additionalItems": true
+					},
+					"features": {
+						"$id": "#/properties/products/items/properties/features",
+						"type": "array",
+						"title": "The features schema",
+						"description": "An explanation about the purpose of this instance.",
+						"default": [],
+						"additionalItems": true
+					},
+					"dynamicAttributes": {
+						"$id": "#/properties/products/items/properties/dynamicAttributes",
+						"type": "object",
+						"title": "DynamicAttributes",
+						"description": "An explanation about the purpose of this instance.",
+						"default": {},
+						"required": [
+							"luxuryfabric",
+							"dressshape",
+							"typeofpattern",
+							"dressbyoccasion",
+							"fabric",
+							"FashionSize"
+						],
+						"properties": {
+							"luxuryfabric": {
+								"$id": "#/properties/products/items/properties/dynamicAttributes/properties/luxuryfabric",
+								"type": "string",
+								"title": "The luxuryfabric schema",
+								"description": "An explanation about the purpose of this instance.",
+								"default": ""
+							},
+							"dressshape": {
+								"$id": "#/properties/products/items/properties/dynamicAttributes/properties/dressshape",
+								"type": "string",
+								"title": "The dressshape schema",
+								"description": "An explanation about the purpose of this instance.",
+								"default": ""
+							},
+							"typeofpattern": {
+								"$id": "#/properties/products/items/properties/dynamicAttributes/properties/typeofpattern",
+								"type": "string",
+								"title": "The typeofpattern schema",
+								"description": "An explanation about the purpose of this instance.",
+								"default": ""
+							},
+							"dressbyoccasion": {
+								"$id": "#/properties/products/items/properties/dynamicAttributes/properties/dressbyoccasion",
+								"type": "string",
+								"title": "The dressbyoccasion schema",
+								"description": "An explanation about the purpose of this instance.",
+								"default": ""
+							},
+							"fabric": {
+								"$id": "#/properties/products/items/properties/dynamicAttributes/properties/fabric",
+								"type": "string",
+								"title": "The fabric schema",
+								"description": "An explanation about the purpose of this instance.",
+								"default": ""
+							},
+							"FashionSize": {
+								"$id": "#/properties/products/items/properties/dynamicAttributes/properties/FashionSize",
+								"type": "string",
+								"title": "The FashionSize schema",
+								"description": "An explanation about the purpose of this instance.",
+								"default": ""
+							}
+						},
+						"additionalProperties": true
+					},
+					"directorate": {
+						"$id": "#/properties/products/items/properties/directorate",
+						"type": "string",
+						"title": "The directorate schema",
+						"description": "An explanation about the purpose of this instance.",
+						"default": ""
+					},
+					"futureRelease": {
+						"$id": "#/properties/products/items/properties/futureRelease",
+						"type": "boolean",
+						"title": "The futureRelease schema",
+						"description": "An explanation about the purpose of this instance.",
+						"default": false
+					},
+					"multiSku": {
+						"$id": "#/properties/products/items/properties/multiSku",
+						"type": "boolean",
+						"title": "The multiSku schema",
+						"description": "An explanation about the purpose of this instance.",
+						"default": false
+					},
+					"fabricByLength": {
+						"$id": "#/properties/products/items/properties/fabricByLength",
+						"type": "boolean",
+						"title": "The fabricByLength schema",
+						"description": "An explanation about the purpose of this instance.",
+						"default": false
+					},
+					"quickAddToBasket": {
+						"$id": "#/properties/products/items/properties/quickAddToBasket",
+						"type": "object",
+						"title": "QuickAddToBasket",
+						"description": "An explanation about the purpose of this instance.",
+						"default": {},
+						"required": [
+							"showPermanentOos",
+							"showMoreInfoRedirectPDP",
+							"simpleAddToBasket",
+							"simpleMobileEmailMe",
+							"showEmailMeTriggerQV",
+							"showChooseSizeTriggerQV"
+						],
+						"properties": {
+							"showPermanentOos": {
+								"$id": "#/properties/products/items/properties/quickAddToBasket/properties/showPermanentOos",
+								"type": "boolean",
+								"title": "The showPermanentOos schema",
+								"description": "An explanation about the purpose of this instance.",
+								"default": false
+							},
+							"showMoreInfoRedirectPDP": {
+								"$id": "#/properties/products/items/properties/quickAddToBasket/properties/showMoreInfoRedirectPDP",
+								"type": "boolean",
+								"title": "The showMoreInfoRedirectPDP schema",
+								"description": "An explanation about the purpose of this instance.",
+								"default": false
+							},
+							"simpleAddToBasket": {
+								"$id": "#/properties/products/items/properties/quickAddToBasket/properties/simpleAddToBasket",
+								"type": "boolean",
+								"title": "The simpleAddToBasket schema",
+								"description": "An explanation about the purpose of this instance.",
+								"default": false
+							},
+							"simpleMobileEmailMe": {
+								"$id": "#/properties/products/items/properties/quickAddToBasket/properties/simpleMobileEmailMe",
+								"type": "boolean",
+								"title": "The simpleMobileEmailMe schema",
+								"description": "An explanation about the purpose of this instance.",
+								"default": false
+							},
+							"showEmailMeTriggerQV": {
+								"$id": "#/properties/products/items/properties/quickAddToBasket/properties/showEmailMeTriggerQV",
+								"type": "boolean",
+								"title": "The showEmailMeTriggerQV schema",
+								"description": "An explanation about the purpose of this instance.",
+								"default": false
+							},
+							"showChooseSizeTriggerQV": {
+								"$id": "#/properties/products/items/properties/quickAddToBasket/properties/showChooseSizeTriggerQV",
+								"type": "boolean",
+								"title": "The showChooseSizeTriggerQV schema",
+								"description": "An explanation about the purpose of this instance.",
+								"default": false
+							}
+						},
+						"additionalProperties": true
+					},
+					"permanentOos": {
+						"$id": "#/properties/products/items/properties/permanentOos",
+						"type": "boolean",
+						"title": "The permanentOos schema",
+						"description": "An explanation about the purpose of this instance.",
+						"default": false
+					}
+				},
+				"additionalProperties": true
+			}
+		},
+		"facets": {
+			"$id": "#/properties/facets",
+			"type": "array",
+			"title": "The facets schema",
+			"description": "An explanation about the purpose of this instance.",
+			"default": [],
+			"additionalItems": true,
+			"items": {
+				"$id": "#/properties/facets/items",
+				"type": "object",
+				"title": "Facet",
+				"description": "An explanation about the purpose of this instance.",
+				"default": {},
+				"required": [
+					"dimensionName",
+					"name",
+					"type",
+					"tooltip",
+					"details"
+				],
+				"properties": {
+					"dimensionName": {
+						"$id": "#/properties/facets/items/properties/dimensionName",
+						"type": "string",
+						"title": "The dimensionName schema",
+						"description": "An explanation about the purpose of this instance.",
+						"default": ""
+					},
+					"name": {
+						"$id": "#/properties/facets/items/properties/name",
+						"type": "string",
+						"title": "The name schema",
+						"description": "An explanation about the purpose of this instance.",
+						"default": ""
+					},
+					"type": {
+						"$id": "#/properties/facets/items/properties/type",
+						"type": "string",
+						"title": "The type schema",
+						"description": "An explanation about the purpose of this instance.",
+						"default": ""
+					},
+					"tooltip": {
+						"$id": "#/properties/facets/items/properties/tooltip",
+						"type": "string",
+						"title": "The tooltip schema",
+						"description": "An explanation about the purpose of this instance.",
+						"default": ""
+					},
+					"details": {
+						"$id": "#/properties/facets/items/properties/details",
+						"type": "array",
+						"title": "The details schema",
+						"description": "An explanation about the purpose of this instance.",
+						"default": [],
+						"additionalItems": true,
+						"items": {
+							"$id": "#/properties/facets/items/properties/details/items",
+							"type": "object",
+							"title": "FacetDetail",
+							"description": "An explanation about the purpose of this instance.",
+							"default": {},
+							"required": [
+								"facetId",
+								"label",
+								"qty",
+								"color",
+								"colorSwatchUrl",
+								"isSelected"
+							],
+							"properties": {
+								"facetId": {
+									"$id": "#/properties/facets/items/properties/details/items/properties/facetId",
+									"type": "string",
+									"title": "The facetId schema",
+									"description": "An explanation about the purpose of this instance.",
+									"default": ""
+								},
+								"label": {
+									"$id": "#/properties/facets/items/properties/details/items/properties/label",
+									"type": "string",
+									"title": "The label schema",
+									"description": "An explanation about the purpose of this instance.",
+									"default": ""
+								},
+								"qty": {
+									"$id": "#/properties/facets/items/properties/details/items/properties/qty",
+									"type": "string",
+									"title": "The qty schema",
+									"description": "An explanation about the purpose of this instance.",
+									"default": ""
+								},
+								"color": {
+									"$id": "#/properties/facets/items/properties/details/items/properties/color",
+									"type": "string",
+									"title": "The color schema",
+									"description": "An explanation about the purpose of this instance.",
+									"default": ""
+								},
+								"colorSwatchUrl": {
+									"$id": "#/properties/facets/items/properties/details/items/properties/colorSwatchUrl",
+									"type": "string",
+									"title": "The colorSwatchUrl schema",
+									"description": "An explanation about the purpose of this instance.",
+									"default": ""
+								},
+								"isSelected": {
+									"$id": "#/properties/facets/items/properties/details/items/properties/isSelected",
+									"type": "string",
+									"title": "The isSelected schema",
+									"description": "An explanation about the purpose of this instance.",
+									"default": ""
+								}
+							},
+							"additionalProperties": true
+						}
+					}
+				},
+				"additionalProperties": true
+			}
+		},
+		"results": {
+			"$id": "#/properties/results",
+			"type": "integer",
+			"title": "The results schema",
+			"description": "An explanation about the purpose of this instance.",
+			"default": 0
+		},
+		"pagesAvailable": {
+			"$id": "#/properties/pagesAvailable",
+			"type": "integer",
+			"title": "The pagesAvailable schema",
+			"description": "An explanation about the purpose of this instance.",
+			"default": 0
+		},
+		"crumbs": {
+			"$id": "#/properties/crumbs",
+			"type": "array",
+			"title": "The crumbs schema",
+			"description": "An explanation about the purpose of this instance.",
+			"default": [],
+			"additionalItems": true,
+			"items": {
+				"$id": "#/properties/crumbs/items",
+				"type": "object",
+				"title": "Crumb",
+				"description": "An explanation about the purpose of this instance.",
+				"default": {},
+				"required": [
+					"clickable",
+					"displayName",
+					"type"
+				],
+				"properties": {
+					"clickable": {
+						"$id": "#/properties/crumbs/items/properties/clickable",
+						"type": "string",
+						"title": "The clickable schema",
+						"description": "An explanation about the purpose of this instance.",
+						"default": ""
+					},
+					"displayName": {
+						"$id": "#/properties/crumbs/items/properties/displayName",
+						"type": "string",
+						"title": "The displayName schema",
+						"description": "An explanation about the purpose of this instance.",
+						"default": ""
+					},
+					"type": {
+						"$id": "#/properties/crumbs/items/properties/type",
+						"type": "string",
+						"title": "The type schema",
+						"description": "An explanation about the purpose of this instance.",
+						"default": ""
+					}
+				},
+				"additionalProperties": true
+			}
+		},
+		"pageInformation": {
+			"$id": "#/properties/pageInformation",
+			"type": "object",
+			"title": "PageInformation",
+			"description": "An explanation about the purpose of this instance.",
+			"default": {},
+			"required": [
+				"title",
+				"noIndex",
+				"noFollow"
+			],
+			"properties": {
+				"title": {
+					"$id": "#/properties/pageInformation/properties/title",
+					"type": "string",
+					"title": "The title schema",
+					"description": "An explanation about the purpose of this instance.",
+					"default": ""
+				},
+				"noIndex": {
+					"$id": "#/properties/pageInformation/properties/noIndex",
+					"type": "boolean",
+					"title": "The noIndex schema",
+					"description": "An explanation about the purpose of this instance.",
+					"default": false
+				},
+				"noFollow": {
+					"$id": "#/properties/pageInformation/properties/noFollow",
+					"type": "boolean",
+					"title": "The noFollow schema",
+					"description": "An explanation about the purpose of this instance.",
+					"default": false
+				}
+			},
+			"additionalProperties": true
+		},
+		"baseFacetId": {
+			"$id": "#/properties/baseFacetId",
+			"type": "string",
+			"title": "The baseFacetId schema",
+			"description": "An explanation about the purpose of this instance.",
+			"default": ""
+		}
+	},
+	"additionalProperties": true
+}

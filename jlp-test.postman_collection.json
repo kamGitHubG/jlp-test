@@ -1,0 +1,122 @@
+{
+	"info": {
+		"_postman_id": "24dfecca-21c0-4e54-b2c8-ea9f55fdc23b",
+		"name": "jlp-test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Call JLP API to get Products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.johnlewis.com/search/api/rest/v2/catalog/products/search/keyword?q=dresses&key=AIzaSyDD_6O5gUgC4tRW5f9kxC0_76XRC8W7_mI",
+					"protocol": "https",
+					"host": [
+						"api",
+						"johnlewis",
+						"com"
+					],
+					"path": [
+						"search",
+						"api",
+						"rest",
+						"v2",
+						"catalog",
+						"products",
+						"search",
+						"keyword"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "dresses"
+						},
+						{
+							"key": "key",
+							"value": "AIzaSyDD_6O5gUgC4tRW5f9kxC0_76XRC8W7_mI"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Reduced Products - Default Label",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/reducedProducts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"reducedProducts"
+					],
+					"query": [
+						{
+							"key": "labelType",
+							"value": "SHOWWASTHENNOW",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Reduced Products - Show Was Then Now Label",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/reducedProducts?labelType=SHOWWASTHENNOW",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"reducedProducts"
+					],
+					"query": [
+						{
+							"key": "labelType",
+							"value": "SHOWWASTHENNOW"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Reduced Products - Discount Label",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/reducedProducts?labelType=ShowPercDscount",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"reducedProducts"
+					],
+					"query": [
+						{
+							"key": "labelType",
+							"value": "ShowPercDscount"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

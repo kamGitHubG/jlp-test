@@ -1,0 +1,82 @@
+{
+    "products": [
+        {
+            "productId": "4859131",
+            "title": "Fenn Wright Manson Isaline Floral Pencil Dress, Blue Peony Print",
+            "colorSwatches": [
+                {
+                    "color": "",
+                    "rgbColor": "#0000FF",
+                    "skuid": "238483455"
+                }
+            ],
+            "nowPrice": "£124",
+            "priceLabel": "49% off - now £124"
+        },
+        {
+            "productId": "4811684",
+            "title": "Hobbs Piper Dress, Midnight/Ivory",
+            "colorSwatches": [
+                {
+                    "color": "",
+                    "rgbColor": "#0000FF",
+                    "skuid": "238432645"
+                }
+            ],
+            "nowPrice": "£99",
+            "priceLabel": "55% off - now £99"
+        },
+        {
+            "productId": "4981457",
+            "title": "Whistles Elephant Print V-Neck Maxi Dress, Black/Multi",
+            "colorSwatches": [
+                {
+                    "color": "",
+                    "rgbColor": "#000000",
+                    "skuid": "238626574"
+                }
+            ],
+            "nowPrice": "£110",
+            "priceLabel": "65% off - now £110"
+        },
+        {
+            "productId": "4827185",
+            "title": "Hobbs Lainey Shirt Dress, Navy",
+            "colorSwatches": [
+                {
+                    "color": "",
+                    "rgbColor": "#0000FF",
+                    "skuid": "238457841"
+                }
+            ],
+            "nowPrice": "£99",
+            "priceLabel": "66% off - now £99"
+        },
+        {
+            "productId": "4843205",
+            "title": "Joules Winslet Floral Button Dress, Red Ditsy",
+            "colorSwatches": [
+                {
+                    "color": "",
+                    "rgbColor": "#FF0000",
+                    "skuid": "238461718"
+                }
+            ],
+            "nowPrice": "£35",
+            "priceLabel": "43% off - now £35"
+        },
+        {
+            "productId": "4892017",
+            "title": "hush Jorja Shirt Dress, Green",
+            "colorSwatches": [
+                {
+                    "color": "",
+                    "rgbColor": "#008000",
+                    "skuid": "238536354"
+                }
+            ],
+            "nowPrice": "£55",
+            "priceLabel": "64% off - now £55"
+        }
+    ]
+}
